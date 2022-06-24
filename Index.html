@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Source/Bootstrap/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Source/Fontawsome/css/all.css">
+    <link rel="stylesheet" href="./Source/Css/style.css">
+    <title>Todo list project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="noStatus col-3">
+                <div class="title">No Status</div>
+                <button class="add btn btn-outline-dark"><i class="fas fa-plus me-1"></i>Add todo</button>
+                <div class="noStatusTodolist" ondragover="dragOverHander(event)" ondrop="dropHandler(event)">
+                    <!-- todo ex:
+                    <div class="todoCard" id="slam" ondragover="test(event)" ondragstart="dragstartHandler(event)" draggable="true">
+                        <div class="ms-2">slam</div>
+                        <button class="deleteBtn me-2"><i class="fas fa-close"></i></button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="notComplete col-3">
+                <div class="title">Not Complete</div>
+                <div class="notCompleteTodoList" ondragover="dragOverHander(event)" ondrop="dropHandler(event)">
+                    <!-- todo -->
+                </div>
+            </div>
+            <div class="inProgress col-3">
+                <div class="title">In Progress</div>
+                <div class="inProgressTodolist" ondragover="dragOverHander(event)" ondrop="dropHandler(event)">
+                    <!-- todo -->
+                </div>
+            </div>
+            <div class="completed col-3">
+                <div class="title">Completed</div>
+                <div class="completedTodolist" ondragover="dragOverHander(event)" ondrop="dropHandler(event)">
+                    <!-- todo -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Source/Bootstrap/Js/bootstrap.bundle.js"></script>
+    <script src="./Source/Script/script.js"></script>
+</body>

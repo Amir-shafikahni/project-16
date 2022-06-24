@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(45deg, #5e5c5c , #9dc5c3);
+}
+
+.container{
+    padding-top: 90px;
+}
+
+.container .row>div{
+    min-height: 400px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.container .title{
+    background-color: rgba(94, 92, 92, 0.197);
+    border-radius: 15px;
+    text-align: center;
+    padding: 6px 0px;
+    font-size: 21px;
+}
+
+.container .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 4px 6px;
+    margin-top: 18px;
+}
+
+.container .btn i {
+    font-size: 20px;
+}
+
+.container .todoCard {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;    
+    margin-top: 18px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.container .todoCard button{
+    background-color: transparent;
+    border: none;
+}
+
+.container .todoCard button i{
+    margin-top: 3px;
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+.container .todoCard button:hover i{
+    color: deeppink;
+}
+
+.noStatusTodolist , .notCompleteTodoList , .inProgressTodolist , .completedTodolist{
+    min-height: 400px;
+}
